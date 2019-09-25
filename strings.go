@@ -15,6 +15,19 @@ func main(){
 	fmt.Println(book[4])
 	fmt.Println(book[5])
 
+	//slicing for abd
+	fmt.Println(book[0:3])
+	//slicing for ABC
+	fmt.Println(book[3:6])
+
+	// also `` exist 
+	tictactoe :=
+`
+xox
+xox
+oo-
+`
+	 fmt.Println(tictactoe)
 }
 
 // $ go run strings.go

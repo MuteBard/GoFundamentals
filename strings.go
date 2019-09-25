@@ -1,12 +1,27 @@
 package main
 import("fmt")
 func main(){
-	book := "this is book"
+	book := "abcABC"
 
 	bookLen := len(book)
 
-	fmt.Printf("the length of the book is %v chars \n", bookLen)
+	fmt.Printf("There are %v bytes/chars in %v \n", bookLen, book)
+
+	//each character corresponds to value in ASCII / bytes in the ansi escape sequences
+	fmt.Println(book[0])
+	fmt.Println(book[1])
+	fmt.Println(book[2])
+	fmt.Println(book[3])
+	fmt.Println(book[4])
+	fmt.Println(book[5])
+
 }
 
 // $ go run strings.go
-// the length of the book is 12 chars 
+// There are 6 bytes/chars in abcABC 
+// 97
+// 98
+// 99
+// 65
+// 66
+// 67

@@ -2,6 +2,7 @@ package main
 import("fmt")
 func main(){
 
+	//dont have to type breaks anyomre, thank you, like why wasnt that always a thing tbh
 	x := 2;
 	switch x {
 	case 1:

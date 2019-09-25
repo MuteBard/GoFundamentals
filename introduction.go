@@ -12,3 +12,11 @@ func main(){
 	fmt.Println("Hello world")
 }
 //execute by entering go run introduction.go
+//you can create executables with go build introduction.go 
+//execute with ./introduction 
+
+
+//go test
+//go get
+//go run
+//go build

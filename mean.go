@@ -25,4 +25,7 @@ func main(){
 // y = 19, type of float64
 // mean = 11.5, type of float64
 
-
+// $ go run mean.go
+// x = 34, type of float64
+// y = 43, type of float64
+// mean = 38.5, type of float64

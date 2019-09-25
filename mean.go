@@ -2,17 +2,16 @@ package main
 import("fmt")
 
 func main(){
-	var x float64
-	var y float64
 
-	x = 4
-	y = 19
+	//the compiler can infer the type of variables
+	//it has a syntax for creating a variable and assigning to it in one line
+	x := 34.0
+	y := 43.0
 
 	fmt.Printf("x = %v, type of %T\n", x, x)
 	fmt.Printf("y = %v, type of %T\n", y, y)
 
-	var mean float64
-	mean = (x + y) / 2
+	mean := (x + y) / 2.0
 	fmt.Printf("mean = %v, type of %T\n", mean, mean)
 }
 

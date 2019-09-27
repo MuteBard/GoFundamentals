@@ -8,3 +8,49 @@ So, currently in our card prodram, we need to make a deck type and it will be an
 types that already exist
 
 We need to create functions with receivers. we are gonna take a primitive type and extend some functionality in it.
+
+
+--RECEIVERS--
+//() after func is known as a reciever and the function as a whole is a reciever on a function
+//Any variable of type "deck" now gets access to the print method
+// - d  Instance of the deck variable we're working with is available in the function as a variable called 'd'
+// - deck  Every variable of type deck can call this function on itself
+// by convention we indicate the reciever by a 1 or 2 letter abbrievation that matches the type of the reciever
+
+func (d deck) print() {
+	for i, card := range d {
+		fmt.Println(i, card)
+	}
+}
+
+hand, remainingDeck := deal(cards, 5)
+hand.print()
+remainingDeck.print()
+
+--RETURN IN GO--
+func deal(d deck, handSize int) (deck, deck) {
+	return d[:handSize], d[handSize:]
+
+}
+
+cards := newDeck()
+cards.print()
+
+--TYPE CONVERSION--
+[]byte("Hi There")
+
+byte is the type that we want
+"Hi There" is the vlaue that we have
+
+
+greeting := "Hi there"
+fmt.Println([]byte(greeting))
+[72 105 32 116 104 101 114 101]
+
+
+func (d deck) toString() string {
+	return strings.Join([]string(d), ",")
+}
+
+cards := newDeck()
+cards.toString()

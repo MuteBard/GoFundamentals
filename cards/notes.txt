@@ -4,7 +4,7 @@ There is no idea of classes inside of Go
 In Go, we have the Basic Go types like string, integer, float, array and map.
 We want to extend a base type and add some extra functionality to it. We need to create a new type
 
-So, currently in our card prodram, we need to make a deck type and it will be an extension of the primitive
+So, currently in our card program, we need to make a deck type and it will be an extension of the primitive
 types that already exist
 
 We need to create functions with receivers. we are gonna take a primitive type and extend some functionality in it.

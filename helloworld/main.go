@@ -23,6 +23,7 @@ package main
 //golang.org/pkg
 import "fmt"
 
+//when using the main package, we must define a function named "main" which is ran automatically when the program runs
 func main(){
 	fmt.Println("Hi there!")
 }

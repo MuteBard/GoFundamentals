@@ -1,0 +1,2 @@
+--Structs--
+Data structure. Collection or properties that are related together. They can be compared to Objects in Javascript

@@ -1,4 +1,4 @@
---Structs--
+--STRUCTS--
 Data structure. Collection or properties that are related together. They can be compared to Objects in Javascript
 
 type contactInfo struct {
@@ -25,3 +25,25 @@ type person struct {
 
 	fmt.Printf("%+v\n", metagross)
     // {firstName:Meta lastName:Gross contactInfo:{email:metagross@gmail.com zipCode:94000}}
+
+--POINTERS--
+Go is a pass by VALUE language
+this means that whenever we pass a value into a function, go will take that value
+its going to take that struct and copy all of that data inside that struct and place it inside
+some new container inside our computer's memory
+
+&variable = give me the memory address of the value this variable is pointing at
+*pointer = give me the value this memory address is point at
+
+A star in front of a type (*person) works differently than a star in front of an actual pointer (*pointerToPerson) 
+
+func (pointerToPerson *person) updateName(newFirstName string) {
+	(*pointerToPerson).firstName = newFirstName
+}
+
+Whenever you see a star where a type should be, that means that this is a decription of a type
+This means we are working with a pointer to a person, not give me the value this memory adress is point at. It a Type decription
+
+
+Turn address into avalue with *address
+Turn value into address with &value

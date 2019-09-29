@@ -24,13 +24,14 @@ func main() {
 		},
 	}
 
-	metagross.updateName("MegaMeta")
+	metagrossPointer := &metagross
+	metagrossPointer.updateName("MegaMeta")
 	metagross.println()
 }
 
 //As the code is set up now, this will not work as intended, we need to talk about pointers
-func (p person) updateName(newFirstName string) {
-	p.firstName = newFirstName
+func (pointerToPerson *person) updateName(newFirstName string) {
+	(*pointerToPerson).firstName = newFirstName
 }
 
 func (p person) println() {

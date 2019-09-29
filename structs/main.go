@@ -2,18 +2,28 @@ package main
 
 import "fmt"
 
+type contactInfo struct {
+	email   string
+	zipCode int
+}
+
 type person struct {
 	firstName string
 	lastName  string
+	contact   contactInfo
 }
 
 func main() {
 
-	// one way to declare a struct
+	//first way to initialize a struct
+	// carl := {"Carl", "Severe"}
+	// fmt.Println(carl)
+
+	//second way to initialize a struct
 	carl := person{firstName: "Carl", lastName: "Severe"}
 	fmt.Println(carl)
 
-	// second way to declare a struct
+	//third way to initialize a struct
 	var erin person
 	fmt.Println(erin)
 
@@ -23,6 +33,17 @@ func main() {
 	//printing with the key : value
 	fmt.Printf("%+v\n", carl)
 	fmt.Printf("%+v\n", erin)
+
+	metagross := person{
+		firstName: "Meta",
+		lastName:  "Gross",
+		contact: contactInfo{
+			email:   "metagross@gmail.com",
+			zipCode: 94000,
+		},
+	}
+
+	fmt.Printf("%+v\n", metagross)
 }
 
 // $ go run main.go

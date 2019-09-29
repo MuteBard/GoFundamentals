@@ -47,3 +47,17 @@ This means we are working with a pointer to a person, not give me the value this
 
 Turn address into avalue with *address
 Turn value into address with &value
+
+	// //this is ugly to write
+	// metagrossPointer := &metagross
+	// metagrossPointer.updateName("MegaMeta")
+	// metagross.println()
+
+	metagross.updateName("MegaMeta")
+	metagross.println()
+}
+
+//As the code is set up now, this will not work as intended, we need to talk about pointers
+func (pointerToPerson *person) updateName(newFirstName string) {
+	(*pointerToPerson).firstName = newFirstName
+}

@@ -23,9 +23,13 @@ func main() {
 			zipCode: 94000,
 		},
 	}
+	// //this is ugly to write
+	// metagrossPointer := &metagross
+	// metagrossPointer.updateName("MegaMeta")
+	// metagross.println()
 
-	metagrossPointer := &metagross
-	metagrossPointer.updateName("MegaMeta")
+	//go allows this shortcut
+	metagross.updateName("MegaMeta")
 	metagross.println()
 }
 

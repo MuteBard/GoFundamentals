@@ -1,0 +1,2 @@
+--MAPS--
+Both the keys and values are statically typed, all keys must be the same type, all values must be of the same type

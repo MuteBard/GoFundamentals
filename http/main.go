@@ -13,8 +13,8 @@ func main() {
 		os.Exit(1)
 	}
 
-	//DONT DO THIS, THIS IS BAD. DONT BE BAD
-	//this gives you no response body to work with
-	//interfaces will help us deal with this
-	fmt.Println(resp)
+	//make a byte slice with empty 999999 values inside
+	bs := make([]byte, 99999)
+	resp.Body.Read(bs)
+	fmt.Print("Response: ", string(bs))
 }

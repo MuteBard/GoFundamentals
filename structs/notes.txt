@@ -12,8 +12,6 @@ type person struct {
 	contactInfo
 }
 
-
-
 	metagross := person{
 		firstName: "Meta",
 		lastName:  "Gross",
@@ -62,6 +60,4 @@ func (pointerToPerson *person) updateName(newFirstName string) {
 	(*pointerToPerson).firstName = newFirstName
 }
 
-csevere@brandeis.edu
-new-7504
-
+[its been changed c:]
